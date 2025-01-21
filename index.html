@@ -100,6 +100,9 @@
             margin-top: 20px;
             transition: background 0.3s ease;
         }
+        .twoPlayer{
+            color:orange;
+        }
         .lastGameData{
             color: #165f7e;
             font-size: 16pt;
@@ -114,8 +117,8 @@
 </head>
 <body>
     <div class="option">
-        <div ><a href="https://stusharads.github.io/TicTacToe3/" class="twoPlayer">Two Player</a></div>
-        <div ><a href="https://stusharads.github.io/TicTacToe4/" class="VsComputer">Vs Computer</a></div>
+        <div ><a href="http://127.0.0.1:5501/TicTacToeALL.html" class="twoPlayer">Two Player</a></div>
+        <div ><a href="http://127.0.0.1:5501/TicTacToeAllvscomp.html" class="VsComputer">Vs Computer</a></div>
     </div>
     <h3>Tic Tac Toe By Tushar</h3>
     <div class="container">
@@ -208,7 +211,7 @@
                 updateLocalStorage();
             }
             if (!clickedCell.classList.contains('box') || clickedCell.innerText !== '') {
-                return; // Ignore clicks outside the board or on filled cells
+                return; 
             }
 
             clickedCell.style.color = "white";
